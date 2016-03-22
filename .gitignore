@@ -1,0 +1,6 @@
+.DS_Store
+.idea
+*.iml
+alf_data_dev
+target
+overlays

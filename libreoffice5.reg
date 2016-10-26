@@ -1,14 +1,12 @@
 Windows Registry Editor Version 5.00
 
-[HKEY_CLASSES_ROOT\vnd.libreoffice.cmis]
+[HKEY_CLASSES_ROOT\libreoffice]
 @="URL:LibreOffice CMIS Protocol"
 "URL Protocol"=""
 
-[HKEY_CLASSES_ROOT\vnd.libreoffice.cmis\shell]
+[HKEY_CLASSES_ROOT\libreoffice\shell]
 
-[HKEY_CLASSES_ROOT\vnd.libreoffice.cmis\shell\open]
+[HKEY_CLASSES_ROOT\libreoffice\shell\open]
 
-[HKEY_CLASSES_ROOT\vnd.libreoffice.cmis\shell\open\command]
-@="\"C:\\Program Files\\LibreOffice 5\\program\\soffice.exe\" \"%1\""
-
-
+[HKEY_CLASSES_ROOT\libreoffice\shell\open\command]
+@="\"C:\\Program Files\\LibreOffice 5\\program\\protocolhandler.bat\" %1"

@@ -11,20 +11,13 @@ YAHOO.Bubbling.fire("registerAction", {
       }
     };
 
-    var user = Alfresco.constants.USERNAME;
-    var repositoryId = "-default-"; // TODO: Fetch somehow?
-    var CMIS_ENDPOINT = "/alfresco/api/" + repositoryId + "/public/cmis/versions/1.1/atom";
-
     // Build the path from the WebDAV path: It already has any items with spaces or other characters url encoded
     var path = node.webdavUrl.replace("/webdav", "");
     if (YAHOO.env.ua.ie > 0) {
       // IE needs to double encode it.
       path = path.split("/").map(encodeURIComponent).join("/");
     }
-    var url = "vnd.libreoffice.cmis://" + encode(user) + "@" + location.protocol;
-    url += encode("//") + encode(location.host);
-    url += encode(CMIS_ENDPOINT) + encode("#") + repositoryId + path;
-    console.log(url);
-    window.location.href = url;
+
+    window.location.href = "libreoffice:" + path;
   }
 });

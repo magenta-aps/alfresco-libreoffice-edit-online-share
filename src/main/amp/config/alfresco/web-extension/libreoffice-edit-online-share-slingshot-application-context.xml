@@ -23,4 +23,42 @@
         </property>
     </bean>
 
+    <!-- Edit Online LibreOffice -->
+    <bean id="evaluator.dk.magenta.doclib.action.isMimetypeEditableLibreOffice" parent="evaluator.doclib.action.isMimetype">
+        <property name="mimetypes">
+            <list>
+                <value>application/vnd.sun.xml.writer</value>
+                <value>application/vnd.sun.xml.writer.template</value>
+                <value>application/vnd.sun.xml.writer.global</value>
+                <value>application/vnd.stardivision.writer sdw</value>
+                <value>application/vnd.stardivision.writer-global</value>
+                <value>application/vnd.sun.xml.calc</value>
+                <value>application/vnd.sun.xml.calc.template</value>
+                <value>application/vnd.stardivision.calc</value>
+                <value>application/vnd.sun.xml.impress</value>
+                <value>application/vnd.sun.xml.impress.template</value>
+                <value>application/vnd.stardivision.impress</value>
+                <value>application/vnd.sun.xml.draw</value>
+                <value>application/vnd.sun.xml.draw.template</value>
+                <value>application/vnd.stardivision.draw</value>
+                <value>application/vnd.sun.xml.math</value>
+                <value>application/vnd.stardivision.math</value>
+                <value>application/vnd.oasis.opendocument.text</value>
+                <value>application/vnd.oasis.opendocument.text-template</value>
+                <value>application/vnd.oasis.opendocument.text-web</value>
+                <value>application/vnd.oasis.opendocument.text-master</value>
+                <value>application/vnd.oasis.opendocument.graphics</value>
+                <value>application/vnd.oasis.opendocument.graphics-template</value>
+                <value>application/vnd.oasis.opendocument.presentation</value>
+                <value>application/vnd.oasis.opendocument.presentation-template</value>
+                <value>application/vnd.oasis.opendocument.spreadsheet</value>
+                <value>application/vnd.oasis.opendocument.spreadsheet-template</value>
+                <value>application/vnd.oasis.opendocument.chart</value>
+                <value>application/vnd.oasis.opendocument.formula</value>
+                <value>application/vnd.oasis.opendocument.database</value>
+                <value>application/vnd.oasis.opendocument.image</value>
+            </list>
+        </property>
+    </bean>
+
 </beans>

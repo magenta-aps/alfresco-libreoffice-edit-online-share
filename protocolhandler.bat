@@ -5,4 +5,4 @@ SET S=%S:"###=%
 SET S=%S:###"=%
 SET S=%S:###=%
 SET S=%S:libreoffice:=%
-start "LibreOffice" "C:\Program Files\LibreOffice 5\program\soffice.exe" Z:%S%
+Start "LibreOffice" "C:\Program Files (x86)\LibreOffice 5\program\soffice.exe" %S%
